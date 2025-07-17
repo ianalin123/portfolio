@@ -6,6 +6,7 @@ export interface Project {
   icon: string;
   tags: string[];
   color: 'neural' | 'synapse' | 'gray';
+  link?: string;
 }
 
 export const projects: Project[] = [
@@ -16,7 +17,8 @@ export const projects: Project[] = [
     period: 'June-Nov 2024',
     icon: 'calculator',
     tags: ['Z3', 'Formal Methods', 'SMT'],
-    color: 'neural'
+    color: 'neural',
+    link: 'https://github.com/ianalin123'
   },
   {
     id: 'spatial-transcriptomics',
@@ -25,7 +27,8 @@ export const projects: Project[] = [
     period: 'Jan-June 2024',
     icon: 'brain',
     tags: ['PyTorch', 'Deep Learning', 'Bioimage Analysis'],
-    color: 'synapse'
+    color: 'synapse',
+    link: 'https://github.com/ianalin123'
   },
   {
     id: 'babygpt',
@@ -34,7 +37,8 @@ export const projects: Project[] = [
     period: 'Dec 2024',
     icon: 'robot',
     tags: ['Python', 'Transformers', 'NLP'],
-    color: 'neural'
+    color: 'neural',
+    link: 'https://github.com/ianalin123'
   },
   {
     id: 'spiking-neural-networks',
@@ -43,7 +47,8 @@ export const projects: Project[] = [
     period: 'Jan 2025',
     icon: 'wave-square',
     tags: ['NEST', 'Computational Neuroscience', 'Python'],
-    color: 'synapse'
+    color: 'synapse',
+    link: 'https://github.com/ianalin123'
   },
   {
     id: 'risc-v',
@@ -52,7 +57,8 @@ export const projects: Project[] = [
     period: 'Dec 2024',
     icon: 'microchip',
     tags: ['Verilog', 'Computer Architecture', 'Digital Logic'],
-    color: 'gray'
+    color: 'gray',
+    link: 'https://github.com/ianalin123'
   },
   {
     id: 'neural-signal-processing',
@@ -61,6 +67,7 @@ export const projects: Project[] = [
     period: 'Spring 2025',
     icon: 'chart-line',
     tags: ['C++', 'Signal Processing', 'DFT'],
-    color: 'neural'
+    color: 'neural',
+    link: 'https://github.com/ianalin123'
   }
 ];

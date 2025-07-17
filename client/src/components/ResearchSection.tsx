@@ -53,9 +53,12 @@ export default function ResearchSection() {
             const colors = getColorClasses(project.color);
             
             return (
-              <div
+              <a
                 key={project.id}
-                className={`group vintage-border glassmorphism rounded-xl p-6 hover:scale-105 transition-transform duration-300 ${
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group vintage-border glassmorphism rounded-xl p-6 hover:scale-105 transition-transform duration-300 block ${
                   index % 3 === 0 ? 'vintage-tilt' : 
                   index % 3 === 1 ? 'ragged-right' : 'ragged-left'
                 }`}
@@ -82,7 +85,7 @@ export default function ResearchSection() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
