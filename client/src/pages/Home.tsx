@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'Neural Lab - Iana Lin';
+    document.title = 'Hi! I\'m Iana - Digital Lab for Thought';
   }, []);
 
   return (

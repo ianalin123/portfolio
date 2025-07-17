@@ -10,21 +10,24 @@ export default function HomeSection() {
           {/* Main content - ragged left */}
           <div className="lg:col-span-3 text-left space-y-8 ragged-left">
             <div className="vintage-tilt">
-              <h1 className="font-serif text-5xl md:text-7xl font-semibold leading-tight">
-                Neural
-                <span className="text-neural-600 dark:text-neural-400"> Lab</span>
+              <h1 className="font-serif text-5xl md:text-7xl font-semibold leading-tight flex items-start">
+                <span className="text-4xl mr-4 mt-2">👋</span>
+                <div>
+                  Hi! I'm
+                  <span className="text-neural-600 dark:text-neural-400"> Iana</span>
+                </div>
               </h1>
               <div className="w-24 h-1 signal-wave mt-4 mb-8"></div>
             </div>
             
             <div className="space-y-6 text-base md:text-lg leading-relaxed">
-              <p className="font-serif italic text-xl ragged-right">
+              <p className="font-serif italic text-xl ragged-right distressed">
                 In the space between synapses and silicon,<br />
                 where algorithms dream and neurons compute,<br />
                 I map the territories of mind and machine.
               </p>
               
-              <p className="font-mono text-sm text-neural-600 dark:text-neural-400 vintage-tilt">
+              <p className="font-mono text-sm text-neural-600 dark:text-neural-400 vintage-tilt distressed">
                 // EECS + Neuroscience @ UC Berkeley<br />
                 // Formal methods, neural networks, creative computation<br />
                 // Building bridges between science and story
