@@ -10,7 +10,7 @@ export default function HomeSection() {
           {/* Main content - ragged left */}
           <div className="lg:col-span-3 text-left space-y-8 ragged-left">
             <div className="vintage-tilt">
-              <h1 className="text-5xl md:text-7xl font-semibold leading-tight flex items-start" style={{ fontFamily: "'Special Elite', monospace" }}>
+              <h1 className="font-serif text-5xl md:text-7xl font-semibold leading-tight flex items-start">
                 <span className="text-4xl mr-4 mt-2">👋</span>
                 <div>
                   Hi! I'm
