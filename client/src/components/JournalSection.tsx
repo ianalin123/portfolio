@@ -18,12 +18,6 @@ export default function JournalSection() {
     { tag: 'mathematics', size: 'text-xs' }
   ];
 
-  const currentlyReading = [
-    { title: 'Gödel, Escher, Bach', author: 'Douglas Hofstadter', color: 'border-neural-500' },
-    { title: 'The Embodied Mind', author: 'Varela, Thompson, Rosch', color: 'border-synapse-500' },
-    { title: 'Principles of Neural Design', author: 'Sterling & Laughlin', color: 'border-gray-400' }
-  ];
-
   const getTagColors = (index: number) => {
     const colors = [
       'bg-neural-100 dark:bg-neural-900 text-neural-700 dark:text-neural-300',
@@ -41,7 +35,7 @@ export default function JournalSection() {
             Digital <span className="text-neural-600 dark:text-neural-400">Journal</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl font-mono ragged-right">
-            Raw thoughts, learning notes, and reflections on the intersection of mind, technology, and creativity.
+            houghts, learning notes, and reflections on the intersection of mind, technology, and creativity.
           </p>
           <div className="w-32 h-1 signal-wave mt-6"></div>
         </div>

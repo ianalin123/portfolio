@@ -11,7 +11,6 @@ export default function FloatingConcepts() {
     'signal.processing',
     'theorem.proving',
     'consciousness.models',
-    'pattern.recognition',
     'synaptic.plasticity',
     'graph.theory'
   ];

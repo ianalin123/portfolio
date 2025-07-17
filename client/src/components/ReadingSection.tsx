@@ -21,29 +21,29 @@ const currentlyReading: Book[] = [
   },
   {
     id: '2',
-    title: 'The Embodied Mind',
-    author: 'Francisco J. Varela',
+    title: 'Being Mortal',
+    author: 'Atul Gawande',
     status: 'currently-reading',
-    goodreadsLink: 'https://www.goodreads.com/book/show/123456'
+    goodreadsLink: 'https://www.goodreads.com/book/show/20696006-being-mortal'
   }
 ];
 
 const recentlyRead: Book[] = [
   {
     id: '3',
-    title: 'Consciousness Explained',
-    author: 'Daniel C. Dennett',
+    title: 'An Immense World',
+    author: 'Ed Yong',
     status: 'read',
-    rating: 5,
-    goodreadsLink: 'https://www.goodreads.com/book/show/2069.Consciousness_Explained'
+    rating: 4,
+    goodreadsLink: 'https://www.goodreads.com/book/show/59575939-an-immense-world'
   },
   {
     id: '4',
-    title: 'Structure and Interpretation of Computer Programs',
-    author: 'Harold Abelson',
+    title: 'When Breath Becomes Air',
+    author: 'Paul Kalanithi',
     status: 'read',
-    rating: 5,
-    goodreadsLink: 'https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs'
+    rating: 4,
+    goodreadsLink: 'https://www.goodreads.com/book/show/25899336-when-breath-becomes-air'
   }
 ];
 
@@ -86,7 +86,7 @@ export default function ReadingSection() {
     <div className="space-y-6">
       <div>
         <h3 className="font-mono text-sm font-medium mb-3 flex items-center">
-          <span className="mr-2">📖</span>
+          <span className="mr-2"></span>
           Currently Reading
         </h3>
         <div className="grid gap-3">
@@ -98,7 +98,7 @@ export default function ReadingSection() {
 
       <div>
         <h3 className="font-mono text-sm font-medium mb-3 flex items-center">
-          <span className="mr-2">✅</span>
+          <span className="mr-2">✓</span>
           Recently Finished
         </h3>
         <div className="grid gap-3">
@@ -110,12 +110,12 @@ export default function ReadingSection() {
 
       <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
         <a
-          href="https://www.goodreads.com/user/show/your-goodreads-id"
+          href="https://www.goodreads.com/user/show/145074354-iana"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center text-xs font-mono text-gray-500 hover:text-neural-600 transition-colors duration-200"
         >
-          <span>View all on Goodreads</span>
+          <span>More on Goodreads</span>
           <ExternalLink className="ml-1" size={10} />
         </a>
       </div>

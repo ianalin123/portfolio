@@ -8,6 +8,6 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   res.status(200).json({ 
     status: 'ok', 
     timestamp: new Date().toISOString(),
-    message: 'Neural Lab API is running'
+    message: 'Portfolio API is running'
   });
 }

@@ -10,7 +10,7 @@ export default function Footer() {
             Building bridges between mind and machine, one synapse at a time.
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400 font-mono">
-            // Always learning, always creating, always questioning
+            // Always walking, sitting, or standing
           </p>
         </div>
         
@@ -22,7 +22,7 @@ export default function Footer() {
             <Mail size={20} />
           </a>
           <a
-            href="https://linkedin.com/in/iana-lin"
+            href="https://linkedin.com/in/ianalin"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-400 hover:text-neural-600 dark:hover:text-neural-400 transition-colors duration-200"
@@ -30,7 +30,7 @@ export default function Footer() {
             <Linkedin size={20} />
           </a>
           <a
-            href="https://github.com/iana-lin"
+            href="https://github.com/ianalin123"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-400 hover:text-neural-600 dark:hover:text-neural-400 transition-colors duration-200"
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
         
         <div className="text-xs text-gray-500 dark:text-gray-500">
-          <p>© 2025 Iana Lin. Built with curiosity, caffeine, and countless neural connections.</p>
+          <p>© 2025 Iana Lin. Built with Replit, chrysanthemum tea, and audiobooks.</p>
         </div>
       </div>
     </footer>

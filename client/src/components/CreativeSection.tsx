@@ -4,8 +4,8 @@ import QuoteRotator from './QuoteRotator';
 export default function CreativeSection() {
   const instagramImages = [
     {
-      src: "https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-      alt: "Gray cat in circular bed"
+      src: "../../../attached_assets/media/IMG_0069.JPG"
+      alt: "Gray cat in Korean cat cafe"
     },
     {
       src: "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
