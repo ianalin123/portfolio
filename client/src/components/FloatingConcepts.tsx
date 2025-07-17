@@ -50,9 +50,10 @@ export default function FloatingConcepts() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       elements.forEach((element, index) => {
-        const speed = 0.1 + (index % 3) * 0.05; // Different speeds for each element
+        const speed = 0.2 + (index % 4) * 0.1; // Different speeds for each element
         const translateY = scrollY * speed;
-        element.style.transform = `translateY(${translateY}px)`;
+        const rotate = scrollY * 0.01 * (index % 2 === 0 ? 1 : -1);
+        element.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
       });
     };
 
