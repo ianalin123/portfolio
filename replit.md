@@ -1,12 +1,13 @@
-# Neural Lab Portfolio - Full-Stack Web Application
+# Neural Lab Portfolio - Multipage Web Application
 
 ## Overview
 
-This is a modern full-stack web application serving as a personal portfolio for a UC Berkeley EECS + Neuroscience student. The application showcases research work, creative projects, and digital journal entries in an elegant, neuroscience-themed interface. Built with a focus on performance, modern web standards, and responsive design.
+A multipage personal portfolio website serving as a digital lab for thought, blending neuroscience, technology, and creative storytelling. The application features a vintage-modern aesthetic with ragged layouts, serif + monospace typography pairing, and interactive neural-themed elements throughout. Built as a true multipage experience showcasing research work, creative projects, and digital journal entries.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preferences: Mix of vintage and modern visuals with ragged yet minimal layout, serif + monospace font pairing.
 
 ## System Architecture
 

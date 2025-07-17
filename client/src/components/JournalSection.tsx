@@ -35,22 +35,25 @@ export default function JournalSection() {
   return (
     <section id="journal" className="py-20 bg-white dark:bg-gray-800 relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-4">
+        <div className="text-left mb-16 ragged-left">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-4 vintage-tilt">
             Digital <span className="text-neural-600 dark:text-neural-400">Journal</span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl font-mono ragged-right">
             Raw thoughts, learning notes, and reflections on the intersection of mind, technology, and creativity.
           </p>
+          <div className="w-32 h-1 signal-wave mt-6"></div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            {journalEntries.map((entry) => (
-              <article key={entry.id} className="glassmorphism rounded-2xl p-8">
+            {journalEntries.map((entry, index) => (
+              <article key={entry.id} className={`vintage-border glassmorphism rounded-2xl p-8 ${
+                index % 2 === 0 ? 'ragged-right' : 'ragged-left'
+              }`}>
                 <header className="mb-6">
                   <time className="text-sm font-mono text-gray-500">{entry.date}</time>
-                  <h3 className="font-serif text-2xl font-semibold mt-2">{entry.title}</h3>
+                  <h3 className="font-serif text-2xl font-semibold mt-2 vintage-tilt">{entry.title}</h3>
                 </header>
                 
                 <div className="prose prose-gray dark:prose-invert max-w-none">
