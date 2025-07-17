@@ -1,4 +1,5 @@
 import { journalEntries } from '@/lib/journal';
+import ReadingSection from './ReadingSection';
 
 export default function JournalSection() {
   const journalStats = {
@@ -108,15 +109,8 @@ export default function JournalSection() {
             </div>
 
             <div className="glassmorphism rounded-2xl p-6">
-              <h4 className="font-serif text-lg font-semibold mb-4">Currently Reading</h4>
-              <div className="space-y-4">
-                {currentlyReading.map((book, index) => (
-                  <div key={index} className={`border-l-4 ${book.color} pl-3`}>
-                    <div className="font-medium text-sm">{book.title}</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">{book.author}</div>
-                  </div>
-                ))}
-              </div>
+              <h4 className="font-serif text-lg font-semibold mb-4">Reading List</h4>
+              <ReadingSection />
             </div>
           </div>
         </div>
