@@ -4,7 +4,7 @@ import QuoteRotator from './QuoteRotator';
 export default function CreativeSection() {
   const instagramImages = [
     {
-      src: "../../../attached_assets/media/IMG_0069.JPG"
+      src: "../../../attached_assets/media/IMG_0069.JPG",
       alt: "Gray cat in Korean cat cafe"
     },
     {
