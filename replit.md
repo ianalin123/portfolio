@@ -20,9 +20,10 @@ Design preferences: Mix of vintage and modern visuals with ragged yet minimal la
 - **Theme System**: Custom dark/light mode with CSS variables
 
 ### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
+- **Development**: Node.js with Express.js framework for local development
+- **Production**: Vercel Serverless Functions for deployment
 - **Language**: TypeScript with ES modules
-- **Storage**: In-memory storage with PostgreSQL-ready schema
+- **Storage**: In-memory storage with PostgreSQL-ready schema (suitable for serverless)
 - **API Design**: RESTful endpoints with `/api` prefix
 - **Development**: Integrated Vite dev server with HMR
 
@@ -79,15 +80,20 @@ Design preferences: Mix of vintage and modern visuals with ragged yet minimal la
 - **Hot Reload**: Full-stack HMR with Vite middleware integration
 - **Type Checking**: Continuous TypeScript validation
 
-### Production Build
+### Vercel Production Deployment
 1. **Frontend**: Vite builds static assets to `dist/public`
-2. **Backend**: ESBuild bundles server code to `dist/index.js`
-3. **Asset Serving**: Express serves static files in production
-4. **Environment**: NODE_ENV-based configuration switching
+2. **Backend**: Serverless functions in `/api` directory using `@vercel/node`
+3. **Configuration**: `vercel.json` handles routing and build settings
+4. **Environment**: Automatic detection between development and production
 
 ### Database Setup
 - **Schema Management**: Drizzle migrations in `/migrations` directory
 - **Environment Variables**: DATABASE_URL for connection configuration
 - **Push Command**: `npm run db:push` for schema deployment
 
-The application is designed to be easily deployable on platforms like Replit, Vercel, or traditional Node.js hosting with minimal configuration changes.
+### Serverless Functions
+- **API Endpoints**: `/api` directory contains Vercel serverless functions
+- **Storage**: Singleton pattern for in-memory storage (suitable for portfolio site)
+- **Type Safety**: Shared TypeScript types between client and serverless functions
+
+The application supports both local Express development and Vercel serverless deployment with automatic environment detection.
