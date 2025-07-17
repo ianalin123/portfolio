@@ -4,12 +4,12 @@ import QuoteRotator from './QuoteRotator';
 export default function CreativeSection() {
   const instagramImages = [
     {
-      src: "../../../attached_assets/media/IMG_0069.JPG",
+      src: "/media/media/IMG_0069.JPG",
       alt: "Gray cat in Korean cat cafe"
     },
     {
-      src: "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-      alt: "Chinese water town canal"
+      src: "/media/media/IMG_0225.JPG",
+      alt: "NanXun, China water town canals"
     },
     {
       src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
