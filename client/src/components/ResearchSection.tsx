@@ -37,24 +37,28 @@ export default function ResearchSection() {
   return (
     <section id="research" className="py-20 bg-white dark:bg-gray-800 relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-4">
+        <div className="text-left mb-16 ragged-left">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-4 vintage-tilt">
             Research <span className="text-neural-600 dark:text-neural-400">&</span> Technical Work
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl font-mono ragged-right">
             Exploring the intersection of formal methods, machine learning, and computational neuroscience.
           </p>
+          <div className="w-32 h-1 signal-wave mt-6"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             const Icon = iconMap[project.icon as keyof typeof iconMap];
             const colors = getColorClasses(project.color);
             
             return (
               <div
                 key={project.id}
-                className="group glassmorphism rounded-xl p-6 hover:scale-105 transition-transform duration-300"
+                className={`group vintage-border glassmorphism rounded-xl p-6 hover:scale-105 transition-transform duration-300 ${
+                  index % 3 === 0 ? 'vintage-tilt' : 
+                  index % 3 === 1 ? 'ragged-right' : 'ragged-left'
+                }`}
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className={`w-12 h-12 ${colors.bg} rounded-lg flex items-center justify-center`}>
@@ -83,30 +87,39 @@ export default function ResearchSection() {
           })}
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 text-center">
-          <div className="glassmorphism rounded-xl p-6">
+        <div className="grid md:grid-cols-5 gap-6">
+          <div className="vintage-border glassmorphism rounded-xl p-6 text-center vintage-tilt">
             <div className="text-3xl font-serif font-semibold text-neural-600 dark:text-neural-400">
               4.0
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">GPA</div>
           </div>
-          <div className="glassmorphism rounded-xl p-6">
+          <div className="vintage-border glassmorphism rounded-xl p-6 text-center ragged-right">
             <div className="text-3xl font-serif font-semibold text-synapse-600 dark:text-synapse-400">
               2+
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">Years Research</div>
           </div>
-          <div className="glassmorphism rounded-xl p-6">
+          <div className="vintage-border glassmorphism rounded-xl p-6 text-center">
             <div className="text-3xl font-serif font-semibold text-neural-600 dark:text-neural-400">
               1
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">Publications</div>
           </div>
-          <div className="glassmorphism rounded-xl p-6">
+          <div className="vintage-border glassmorphism rounded-xl p-6 text-center ragged-left">
             <div className="text-3xl font-serif font-semibold text-synapse-600 dark:text-synapse-400">
               5+
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">Languages</div>
+          </div>
+          <div className="vintage-border glassmorphism rounded-xl p-6 text-center vintage-tilt">
+            <a
+              href="/resume"
+              className="block text-2xl font-serif font-semibold text-gray-600 dark:text-gray-400 hover:text-neural-600 dark:hover:text-neural-400 transition-colors duration-200"
+            >
+              CV
+            </a>
+            <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">Download</div>
           </div>
         </div>
       </div>
